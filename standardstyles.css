@@ -1,0 +1,133 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+header, nav, footer {
+    width: 100%;
+    text-align: center;
+}
+
+header {
+    background: #007bff;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    position: relative; /* Positionierung für den Button */
+}
+
+nav {
+    background: #333;
+}
+
+nav ul {
+    list-style: none;
+    padding: 10px;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #007bff;
+}
+
+main {
+    padding: 20px;
+    width: 80%; /* Set the width of the main content */
+    max-width: 800px; /* Optional: limit the maximum width */
+}
+
+section {
+    margin: 20px 0;
+    padding: 20px;
+    background: white;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center; /* Center the text inside sections */
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background: #333;
+    color: white;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Dark theme styles */
+body.dark {
+    background-color: #333;
+    color: #f4f4f4;
+}
+
+body.dark header {
+    background: #0056b3;
+}
+
+body.dark nav {
+    background: #444;
+}
+
+body.dark nav ul li a {
+    color: #f4f4f4;
+}
+
+body.dark nav ul li a:hover {
+    color: #0056b3;
+}
+
+body.dark section {
+    background: #444; /* Dunklerer Hintergrund für die Abschnitte */
+    border: 1px solid #555; /* Dunklerer Rand */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Stärkerer Schatten */
+}
+
+/* Button Styles */
+#theme-toggle {
+    position: absolute; /* Absolute Positionierung */
+    top: 20px; /* Abstand vom oberen Rand */
+    right: 20px; /* Abstand vom rechten Rand */
+    background: linear-gradient(90deg, #0056b3, #003d80); /* Dunklerer Gradient */
+    color: white;
+    border: none;
+    border-radius: 25px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.2s;
+    outline: none;
+}
+
+#theme-toggle:hover {
+    background: linear-gradient(90deg, #003d80, #0056b3); /* Darker hover effect */
+    transform: scale(1.05);
+}
+
+#theme-toggle:focus {
+    box-shadow: 0 0 5px rgba(0, 56, 255, 0.5); /* Adjusted focus shadow */
+}
