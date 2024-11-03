@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reisebilder</title>
+    <link rel="stylesheet" href="stylesPortfolio.css">
+</head>
+<body>
+    <header>
+        <h1>Reisebilder</h1>
+        <button id="theme-toggle">Darkmode</button>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="standard.html">Home</a></li>
+            <li><a href="#" onclick="showImages('italien')">Italien</a></li>
+            <li><a href="#" onclick="showImages('schweiz')">Schweiz</a></li>
+            <li><a href="#" onclick="showImages('daenemark')">Dänemark</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section id="image-gallery" class="gallery">
+            <div class="carousel">
+                <button class="prev" onclick="changeImage(-1)">&#10094;</button>
+                <div class="carousel-images">
+                    <img id="current-image" src="images/Italy1.jpg" alt="Reisebild">
+                </div>
+                <button class="next" onclick="changeImage(1)">&#10095;</button>
+            </div>
+        </section>
+    </main>
+    
+    <footer>
+        <p>&copy; 2023 Reisebilder. Alle Rechte vorbehalten.</p>
+        <div class="social-media">
+            <a href="#">Facebook</a>
+            <a href="#">Twitter</a>
+            <a href="#">Instagram</a>
+        </div>
+    </footer>
+    <script src="scriptPortfolio.js"></script>
+</body>
+</html>

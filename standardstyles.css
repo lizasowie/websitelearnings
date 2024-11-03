@@ -70,14 +70,32 @@ section {
 }
 
 footer {
-    text-align: center;
+    text-align: left;
     padding: 10px;
     background: #333;
     color: white;
     position: relative;
     bottom: 0;
     width: 100%;
+    display: flex; /* Flexbox aktivieren */
+    justify-content: space-between; /* Platz zwischen den Elementen */
+    align-items: center; /* Vertikale Ausrichtung */
 }
+
+.social-media {
+    display: flex; /* Flexbox für die Icons */
+}
+
+.social-media a {
+    color: white; /* Farbe der Icons */
+    margin-left: 15px; /* Abstand zwischen den Icons */
+    text-decoration: none; /* Unterstreichung entfernen */
+}
+
+.social-media a:hover {
+    color: #ccc; /* Farbe beim Hover */
+}
+
 
 /* Dark theme styles */
 body.dark {
@@ -130,4 +148,21 @@ body.dark section {
 
 #theme-toggle:focus {
     box-shadow: 0 0 5px rgba(0, 56, 255, 0.5); /* Adjusted focus shadow */
+}
+
+.about-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.about-text {
+    flex: 1;
+    margin-right: 20px; /* Abstand zwischen Text und Bild */
+}
+
+.about-image img {
+    max-width: 100%; /* Bild responsive machen */
+    height: auto; /* Höhe automatisch anpassen */
+    border-radius: 8px; /* Optional: abgerundete Ecken */
 }
