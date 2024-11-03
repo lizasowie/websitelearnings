@@ -20,37 +20,6 @@ header, nav, footer {
     text-align: center;
 }
 
-header {
-    background: #007bff;
-    color: white;
-    padding: 20px;
-    position: relative;
-}
-
-nav {
-    background: #333;
-}
-
-nav ul {
-    list-style: none;
-    padding: 10px;
-}
-
-nav ul li {
-    display: inline;
-    margin-right: 20px;
-}
-
-nav ul li a {
-    color: white;
-    text-decoration: none;
-    transition: color 0.3s;
-}
-
-nav ul li a:hover {
-    color: #007bff;
-}
-
 main {
     padding: 20px;
     width: 80%;
@@ -101,10 +70,6 @@ body.dark {
     color: #f4f4f4;
 }
 
-body.dark header {
-    background: #0056b3;
-}
-
 body.dark nav {
     background: #444;
 }
@@ -114,7 +79,7 @@ body.dark nav ul li a {
 }
 
 body.dark nav ul li a:hover {
-    color: #0056b3;
+    color: #292a2c;
 }
 
 body.dark section {
@@ -205,4 +170,27 @@ button.prev {
 
 button.next {
     right: 10px;
+}
+
+.portfolio-gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Responsive grid */
+    gap: 15px; /* Space between items */
+}
+
+.portfolio-item {
+    overflow: hidden; /* Hide overflow for rounded corners */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    transition: transform 0.3s; /* Smooth scaling effect */
+}
+
+.portfolio-item:hover {
+    transform: scale(1.05); /* Scale up on hover */
+}
+
+.portfolio-item img {
+    width: 100%; /* Make images responsive */
+    height: auto; /* Maintain aspect ratio */
+    display: block; /* Remove bottom space */
 }

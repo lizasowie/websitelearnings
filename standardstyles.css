@@ -12,7 +12,7 @@ body {
     flex-direction: column;
     align-items: center;
     line-height: 1.6;
-    background-color: #f4f4f4;
+    background-color: #1a0c4d;
     color: #333;
     transition: background-color 0.3s, color 0.3s;
 }
@@ -23,7 +23,7 @@ header, nav, footer {
 }
 
 header {
-    background: #007bff;
+    background: #1a0c4d;
     color: white;
     padding: 20px;
     text-align: center;
@@ -31,7 +31,9 @@ header {
 }
 
 nav {
-    background: #333;
+    background: linear-gradient(135deg, #b0b0d1, #1a0c4d);
+    padding: 15px 20px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
 }
 
 nav ul {
@@ -42,6 +44,19 @@ nav ul {
 nav ul li {
     display: inline;
     margin-right: 20px;
+}
+
+nav a {
+    color: #ffffff;
+    text-decoration: none;
+    padding: 10px 15px;
+    transition: background 0.3s, color 0.3s;
+}
+
+nav a:hover {
+    background: rgba(255, 255, 255, 0.2);
+    color: #ffffff;
+    border-radius: 5px;
 }
 
 nav ul li a {
@@ -104,7 +119,7 @@ body.dark {
 }
 
 body.dark header {
-    background: #0056b3;
+    background: #f4f4f4;
 }
 
 body.dark nav {
@@ -116,7 +131,7 @@ body.dark nav ul li a {
 }
 
 body.dark nav ul li a:hover {
-    color: #0056b3;
+    color: #f4f4f4;
 }
 
 body.dark section {
@@ -127,10 +142,10 @@ body.dark section {
 
 /* Button Styles */
 #theme-toggle {
-    position: absolute; /* Absolute Positionierung */
-    top: 20px; /* Abstand vom oberen Rand */
-    right: 20px; /* Abstand vom rechten Rand */
-    background: linear-gradient(90deg, #0056b3, #003d80); /* Dunklerer Gradient */
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background: linear-gradient(90deg, #0056b3, #003d80); /* Gradient from blue to a darker blue */
     color: white;
     border: none;
     border-radius: 25px;
@@ -141,8 +156,9 @@ body.dark section {
     outline: none;
 }
 
+
 #theme-toggle:hover {
-    background: linear-gradient(90deg, #003d80, #0056b3); /* Darker hover effect */
+    background: linear-gradient(90deg, #14083f, #170a47); /* Darker hover effect */
     transform: scale(1.05);
 }
 
@@ -166,3 +182,50 @@ body.dark section {
     height: auto; /* Höhe automatisch anpassen */
     border-radius: 8px; /* Optional: abgerundete Ecken */
 }
+
+.title {
+    font-size: 2.5em; /* Adjust size as needed */
+    color: white; /* White color */
+    font-family: 'arial', cursive; /* Use the imported font */
+    margin: 0; /* Remove default margin */
+    text-align: center; /* Align text to the left */
+    padding: 10px 0; /* Add some padding for spacing */
+}
+
+/* Social Media Styles */
+.socials {
+    display: flex; /* Use flexbox for layout */
+    justify-content: center; /* Center the icons */
+    margin-top: 20px; /* Space above the icons */
+}
+
+.socials a {
+    color: #333; /* Default icon color */
+    margin: 0 15px; /* Space between icons */
+    font-size: 2em; /* Size of the icons */
+    transition: color 0.3s; /* Smooth color transition */
+}
+
+.socials a:hover {
+    color: #007bff; /* Change color on hover */
+}
+
+/* Optional: Add specific colors for each icon */
+.socials a:nth-child(1) { color: #FF0000; } /* YouTube */
+.socials a:nth-child(2) { color: #6441a4; } /* Twitch */
+.socials a:nth-child(3) { color: #E1306C; } /* Instagram */
+.socials a:nth-child(4) { color: #69C9D0; } /* TikTok */
+.socials a:nth-child(5) { color: #E60023; } /* Pinterest */
+
+.video-container {
+    display: flex;
+    justify-content: center; /* Center the video */
+    margin-top: 20px; /* Space above the video */
+}
+
+.video-container iframe {
+    width: 100%; /* Set width to 100% of the container */
+    height: 400px; /* Set a fixed height */
+    max-width: 800px; /* Optional: limit the maximum width */
+}
+
