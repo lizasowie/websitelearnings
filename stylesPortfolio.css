@@ -1,0 +1,196 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+header, nav, footer {
+    width: 100%;
+    text-align: center;
+}
+
+main {
+    padding: 20px;
+    width: 80%;
+    max-width: 800px;
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.gallery img {
+    width: 200px; /* Feste Breite */
+    height: 350px; /* Feste Höhe */
+    object-fit: cover; /* Bild wird skaliert, um den Container auszufüllen */
+    margin: 10px;
+    border-radius: 10px;
+}
+
+footer {
+    text-align: left;
+    padding: 10px;
+    background: #333;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.social-media {
+    display: flex;
+}
+
+.social-media a {
+    color: white;
+    margin-left: 15px;
+    text-decoration: none;
+}
+
+.social-media a:hover {
+    color: #ccc;
+}
+
+/* Dark theme styles */
+body.dark {
+    background-color: #333;
+    color: #f4f4f4;
+}
+
+body.dark nav {
+    background: #444;
+}
+
+body.dark nav ul li a {
+    color: #f4f4f4;
+}
+
+body.dark nav ul li a:hover {
+    color: #292a2c;
+}
+
+body.dark section {
+    background: #444;
+    border: 1px solid #555;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+body.dark button.prev,
+body.dark button.next {
+    background-color: #444; /* Ändere die Hintergrundfarbe */
+    color: white; /* Setze die Farbe der Pfeile auf weiß */
+}
+
+/* Button Styles */
+#theme-toggle {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background: linear-gradient(90deg, #0056b3, #003d80);
+    color: white;
+    border: none;
+    border-radius: 25px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.2s;
+    outline: none;
+}
+
+#theme-toggle:hover {
+    background: linear-gradient(90deg, #003d80, #0056b3);
+    transform: scale(1.05);
+}
+
+#theme-toggle:focus {
+    box-shadow: 0 0 5px rgba(0, 56, 255, 0.5);
+}
+
+.about-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.about-text {
+    flex: 1;
+    margin-right: 20px;
+}
+
+.about-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.carousel {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.carousel-images {
+    width: 80%; /* oder eine andere Breite nach Bedarf */
+    overflow: hidden;
+}
+
+.carousel-images img {
+    width: 100%;
+    height: auto;
+}
+
+button.prev, button.next {
+    background-color: #f4f4f4;
+    border: none;
+    cursor: pointer;
+    font-size: 24px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1;
+}
+
+button.prev {
+    left: 10px;
+}
+
+button.next {
+    right: 10px;
+}
+
+.portfolio-gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Responsive grid */
+    gap: 15px; /* Space between items */
+}
+
+.portfolio-item {
+    overflow: hidden; /* Hide overflow for rounded corners */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    transition: transform 0.3s; /* Smooth scaling effect */
+}
+
+.portfolio-item:hover {
+    transform: scale(1.05); /* Scale up on hover */
+}
+
+.portfolio-item img {
+    width: 100%; /* Make images responsive */
+    height: auto; /* Maintain aspect ratio */
+    display: block; /* Remove bottom space */
+}

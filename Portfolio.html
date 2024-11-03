@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reisebilder</title>
+    <link rel="stylesheet" href="stylesPortfolio.css">
+    <link rel="stylesheet" href="standardstyles.css">
+</head>
+<body>
+    <nav>
+        <h1 class="title">Reisebilder</h1>
+        <ul>
+            <li><a href="standard.html">Home</a></li>
+            <li><a href="#" onclick="showImages('italien')">Italien</a></li>
+            <li><a href="#" onclick="showImages('schweiz')">Schweiz</a></li>
+            <li><a href="#" onclick="showImages('daenemark')">Dänemark</a></li>
+            <button id="theme-toggle">Darkmode</button>
+        </ul>
+    </nav>
+    <main>
+        <!--
+        <section id="image-gallery" class="gallery">
+            <div class="carousel">
+                <button class="prev" onclick="changeImage(-1)">&#10094;</button>
+                <div class="carousel-images">
+                    <img id="current-image" src="images/Italy1.jpg" alt="Reisebild">
+                </div>
+                <button class="next" onclick="changeImage(1)">&#10095;</button>
+            </div>
+        </section>
+        -->
+
+        <section class="portfolio-gallery">
+            <div class="portfolio-item">
+                <img src="images/Swiss1.jpg" alt="Bild 1">
+            </div>
+            <div class="portfolio-item">
+                <img src="images/Swiss2.jpg" alt="Bild 2">
+            </div>
+            <div class="portfolio-item">
+                <img src="images/Swiss3.jpg" alt="Bild 3">
+            </div>
+            <div class="portfolio-item">
+                <img src="images/Swiss4.jpg" alt="Bild 4">
+            </div>
+            <div class="portfolio-item">
+                <img src="images/Italy1.jpg" alt="Bild 5">
+            </div>
+            <div class="portfolio-item">
+                <img src="images/Italy2.jpg" alt="Bild 6">
+            </div>
+        </section>
+    </main>
+
+
+    
+    <footer>
+        <p>&copy; 2024 LizaSoka</p>
+        <div class="social-media">
+            <a href="https://www.facebook.com" target="_blank" aria-label="Facebook">
+                <i class="fab fa-facebook-f"></i>
+            </a>
+            <a href="https://www.twitter.com" target="_blank" aria-label="Twitter">
+                <i class="fab fa-twitter"></i>
+            </a>
+            <a href="https://www.instagram.com" target="_blank" aria-label="Instagram">
+                <i class="fab fa-instagram"></i>
+            </a>
+            <a href="https://www.linkedin.com" target="_blank" aria-label="LinkedIn">
+                <i class="fab fa-linkedin-in"></i>
+            </a>
+        </div>
+    </footer>
+    <script src="scriptPortfolio.js"></script>
+</body>
+</html>

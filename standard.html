@@ -3,47 +3,104 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Modern Web Page</title>
+    <title>LizaSoka</title>
     <link rel="stylesheet" href="standardstyles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Rubik+Wet+Paint&display=swap" rel="stylesheet">
+    <style>
+        /* Inline styles can be moved to CSS for better organization */
+        .title {
+            font-size: 2.5em; /* Adjust size as needed */
+            color: white; /* White color */
+            font-family: 'Roboto', sans-serif; /* Use the imported font */
+            display: inline; /* Keep it inline with the nav */
+            margin-right: 20px; /* Space between title and nav */
+        }
+        nav {
+            background-color: #333; /* Optional: Add a background color to the nav */
+            padding: 10px; /* Optional: Add some padding */
+        }
+    </style>
 </head>
 <body>
-    <header>
-        <h1>Welcome to My Modern Web Page</h1>
-        <button id="theme-toggle">Dark/Light Theme</button>
-    </header>
     <nav>
+        <h1 class="title">LizaSoka</h1>
         <ul>
             <li><a href="#home">Home</a></li>
             <li><a href="#about">About</a></li>
+            <li><a href="Portfolio.html">Portfolio</a></li>
+            <li><a href="articles.html">Articles</a></li>
             <li><a href="#contact">Contact</a></li>
-            <li><a href="#my-tech">My Tech</a></li>
-            <li><a href="#contact">Contact</a></li>
+            <button id="theme-toggle">Dark/Light</button>
         </ul>
     </nav>
     <main>
         <section id="home">
             <h2>Home Section</h2>
             <p>This is the home section of the web page.</p>
+            <div class="video-container">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/b65WektqImY?si=OBgkxoSRG-Ow2ofj&amp;start=157" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" frameborder="0" allowfullscreen></iframe>
+            </div>
         </section>
         <section id="about">
             <h2>About Section</h2>
-            <p>This section contains information about the website.</p>
+            
+            <div class="about-content">
+                <div class="about-text">
+                    <p>Willkommen auf meiner Webseite! Ich bin ein leidenschaftlicher Entwickler mit einem Interesse an modernen Technologien und Webentwicklung. In meiner Freizeit experimentiere ich gerne mit neuen Programmiersprachen und Frameworks, um meine Fähigkeiten zu erweitern und innovative Projekte zu erstellen.</p>
+                    <p>Ich glaube an die Kraft des Lernens und des Teilens von Wissen. Deshalb habe ich diese Webseite erstellt, um meine Erfahrungen und Projekte mit anderen zu teilen. Ich hoffe, dass du hier etwas Nützliches findest!</p>
+                </div>
+                <div class="about-image">
+                    <img src="C:\Users\LizaSoka\Downloads\WebiteProject\websitelearnings\images\Millerntor.png" alt="Mein Bild" />
+                </div>
+            </div>
         </section>
+        
         <section id="contact">
             <h2>Contact Section</h2>
             <p>Here you can find contact information.</p>
         </section>
-        <section id="my-tech">
+        <section id="portfolio">
             <h2>My Tech Section</h2>
             <p>This section showcases my favorite technologies and tools.</p>
         </section>
         <section id="contact">
-            <h2>Contact Section</h2>
-            <p>Here you can find contact information.</p>
-        </section>
+            <h2>Socials</h2>
+            <div class="socials">
+                <a href="https://www.youtube.com" target="_blank" aria-label="YouTube">
+                    <i class="fab fa-youtube"></i>
+                </a>
+                <a href="https://www.twitch.tv" target="_blank" aria-label="Twitch">
+                    <i class="fab fa-twitch"></i>
+                </a>
+                <a href="https://www.instagram.com" target="_blank" aria-label="Instagram">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="https://www.tiktok.com" target="_blank" aria-label="TikTok">
+                    <i class="fab fa-tiktok"></i>
+                </a>
+                <a href="https://www.pinterest.com" target="_blank" aria-label="Pinterest">
+                    <i class="fab fa-pinterest"></i>
+                </a>
+            </div>
+        </section> 
     </main>
     <footer>
-        <p>&copy; 2023 My Modern Web Page</p>
+        <p>&copy; 2024 LizaSoka</p>
+        <div class="social-media">
+            <a href="https://www.facebook.com" target="_blank" aria-label="Facebook">
+                <i class="fab fa-facebook-f"></i>
+            </a>
+            <a href="https://www.twitter.com" target="_blank" aria-label="Twitter">
+                <i class="fab fa-twitter"></i>
+            </a>
+            <a href="https://www.instagram.com" target="_blank" aria-label="Instagram">
+                <i class="fab fa-instagram"></i>
+            </a>
+            <a href="https://www.linkedin.com" target="_blank" aria-label="LinkedIn">
+                <i class="fab fa-linkedin-in"></i>
+            </a>
+        </div>
     </footer>
     <script src="script.js"></script>
 </body>
